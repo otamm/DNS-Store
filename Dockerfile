@@ -17,3 +17,4 @@ EXPOSE 3000
 CMD ["rails", "server", "-b", "0.0.0.0"]
 
 # created app with docker-compose run web rails new . --force --no-deps --api --database=postgresql -T
+# run `sudo chown -R $USER:$USER .` if on linux
