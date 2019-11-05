@@ -1,24 +1,22 @@
-# README
+* If running docker on linux, run `sudo chown -R $USER:$USER .` first.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Build App
+`docker-compose build`
 
-Things you may want to cover:
+## Start App
+`docker-compose up`
 
-* Ruby version
+## Create DB
+`docker-compose run web rake db:create`
 
-* System dependencies
+## Run Test Suite
+With live app started, `docker-compose run web bundle exec rspec`
 
-* Configuration
+## Kill App
+`docker-compose down`
 
-* Database creation
+## Insert Record
+### TODO
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Retrieve Records
+### TODO
