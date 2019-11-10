@@ -1,5 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe DnsRecord, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "validates attributes" do
+  	it "validates an IPV4 address before saving" do
+
+  	end
+  	it "adds itself as an index to hostname model automatically" do
+
+  	end
+  end
 end
